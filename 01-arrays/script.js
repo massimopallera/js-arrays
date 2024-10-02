@@ -56,8 +56,15 @@ if (lewisIndex !== -1){
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = ;
+const teachersString = teachers.join(', ');
+console.log(teachersString)
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+let isTeachersEmpty = false;
+
+if (!teachers.length){
+  isTeachersEmpty = true
+}
+
+console.log(isTeachersEmpty);
